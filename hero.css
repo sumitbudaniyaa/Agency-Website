@@ -1,0 +1,249 @@
+.herosection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(59, 124, 184), white);
+
+    .text-box
+    {
+      width: 50%;
+      height: 100%;
+
+      
+#relvl
+{
+  position: absolute;
+  top: 12rem;
+  left: 3rem;
+  font-size: 15rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#yourbrand
+{
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+  font-size: 9rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+#withour
+{
+  position: absolute;
+  top: 27rem;
+  left: 3rem;
+  font-size: 10rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.text-box-btns
+{
+  position: absolute;
+  top: 38rem;
+  left: 3rem;
+  width: 35rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+
+  button{
+    min-width: 7rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 2rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+    transition: all .20s linear;
+  }
+
+    button:hover
+    {
+      background-color: black;
+      color: white;
+    }
+  
+}
+  
+    }
+
+.img-box{
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  #rocketimg
+  {
+    margin-top: 15rem;
+    width: 25rem;
+    height: 25rem;
+    transform: rotateZ(46deg);
+    z-index: 5;
+  }
+
+  #cloudimg
+  {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 60%;
+    left: 58%;
+    z-index: 10;
+  }
+
+  #cloudimg1
+  {
+    width: 35rem;
+    height: 35rem;
+    position: absolute;
+    top: 12%;
+    left: 65%;
+  }
+}
+
+.nav-box
+{
+  display: none;
+  z-index: 9999;
+}
+}
+
+
+@media only screen and (max-width: 480px)
+{
+  .herosection
+  {
+    flex-direction: column;
+
+    .text-box
+    {
+      width: 100%;
+      height: 50%;
+
+      #relvl
+      {
+        font-size: 5rem;
+        left: 1rem;
+        top: 8rem;
+      }
+
+      #yourbrand
+      {
+        font-size: 4rem;
+        left: 1rem;
+        top: 10.5rem;
+      }
+
+      #withour
+      {
+        font-size: 5rem;
+        left: 1rem;
+        top: 12.5rem;
+      }
+
+      .text-box-btns{
+        top: 18rem;
+        width: 20rem;
+        left: 1rem;
+
+        button{
+          min-width: 4.5rem;
+          height: 1.5rem;
+          font-size: .6rem;
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .img-box
+    {
+      width: 100%;
+      height: 50%;
+
+      #rocketimg
+      {
+        width: 15rem;
+        height: 15rem;
+        margin-top: -1rem;
+      }
+
+      #cloudimg
+      {
+        width: 10rem;
+        height: 10rem;
+        left: 15%;
+        top: 70%;
+      }
+
+      #cloudimg1
+      {
+        width: 15rem;
+        height: 15rem;
+        left: 35%;
+        top: 40%;
+      }
+    }
+    .nav-box
+    {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 25rem;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      background-color: rgba(59, 124, 184, 0.529);
+      backdrop-filter: blur(50px);
+    }
+    #close-btn
+    {
+      font-size: 1.5rem;
+      margin-left: 90%;
+      margin-top: 3%;
+      color: white;
+    }
+
+    ul{
+      width: 100%;
+      margin-top: 2rem;
+      
+      li{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        border-top: 1px solid white;
+        font-size: 1.25rem;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings: "wdth" 100, "YTLC" 500;
+      }
+    }
+  }
+}

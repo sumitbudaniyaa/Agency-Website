@@ -1,0 +1,74 @@
+.projects {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    left: 75%;
+    top: 240%;
+    transform: rotateZ(46deg);
+  }
+
+  p {
+    font-size: 8rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+  }
+
+  .projectbox
+  {
+    width: 70%;
+    height: 30rem;
+    border-radius: 5rem;
+    background-color: rgb(59, 124, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+  }
+}
+
+
+@media only screen and (max-width: 480px)
+{
+  .projects
+  {
+    margin-top: -5rem;
+    p{
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .projectbox
+    {
+      width: 90%;
+      font-size: 1.5rem;
+      border-radius: 2rem;
+      margin-top: 1rem;
+    }
+
+    img{
+      position: static;
+      width: 10rem;
+      height: 10rem;
+      margin-top: 2rem;
+      margin-bottom: -10rem;
+      transform: rotateZ(135deg);
+    }
+  }
+}
