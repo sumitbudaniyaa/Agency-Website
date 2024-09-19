@@ -1,2 +1,2 @@
 # Agency-Website
-Made a responsive website for an agency using REACT.
+Developed a responsive website for an agency using REACT.
